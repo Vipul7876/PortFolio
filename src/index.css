@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body{
+  padding: 0% 15%;
+  background: rgb(17, 8, 26);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.mukta-extralight {
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mukta-light {
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mukta-regular {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mukta-medium {
+  font-family: "Mukta", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mukta-semibold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mukta-bold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mukta-extrabold {
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+a:any-link{
+  text-decoration: none;
+  color: currentColor;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8750f7;
+  border-radius: 1rem;
+  border: 0.2rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(42,20,84);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #7939f8;
+}
+
+@media (max-width: 1024px) {
+  body{
+    padding: 0% 10%;
+  }
+}

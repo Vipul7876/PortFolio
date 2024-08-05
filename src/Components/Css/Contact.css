@@ -1,0 +1,365 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mukta", sans-serif;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  margin-top: 2.9rem;
+  gap: 6rem;
+}
+
+.contact-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem;
+  background-color: #1a122e;
+  border-radius: 1.6rem;
+}
+
+.contact-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40rem;
+  gap: 0.65rem;
+}
+
+.contact-left-container h1 {
+  font-size: 3.8rem;
+  background: linear-gradient(to right, #8750f7, white);
+  -webkit-background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.contact-left-container p {
+  font-size: 1.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.3rem;
+}
+
+.personal-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+.personal-details input {
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  padding: 0.3rem;
+  cursor: text;
+  font-size: 1.2rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.3rem;
+}
+
+.message select {
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  height: 2.5rem;
+  padding: 0.3rem;
+  padding-right: 1.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.message textarea {
+  height: 12rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  resize: none;
+}
+
+.message button {
+  font-size: 1.3rem;
+  border: none;
+  padding: 1rem 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background: linear-gradient(to right, #8750f7, #140c1c);
+  width: 12rem;
+}
+
+.message button:hover {
+  outline: 1px solid #8750f7;
+}
+
+.contact-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-with-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 25rem;
+}
+
+.connect-div {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.connect-div div p {
+  font-size: 1.3rem;
+}
+
+.connect-div div h3 {
+  font-size: 1.31rem;
+}
+
+.contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #8750f7, #140c1c);
+  border-radius: 1.9rem;
+  padding: 1rem;
+  cursor: pointer;
+  height: 3.8rem;
+  transition: 0.45s ease-in-out;
+}
+
+.contact-img:hover {
+  scale: 1.19;
+}
+
+.contact-img a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img a img {
+  width: 30px;
+  height: 30px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.thankyou {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+.thankyou h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #8750f7, white);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.thankyou a button {
+  font-size: 1.3rem;
+  border: none;
+  padding: 1rem 1.6rem;
+  border-radius: 1.9rem;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background: linear-gradient(to right, #8750f7, #140c1c);
+  width: 12rem;
+}
+
+/* ---------------Media Queires------- */
+
+@media (max-width: 1200px) {
+  .contact-container {
+    gap: 3.5rem;
+  }
+
+  .contact-left {
+    padding: 2rem;
+  }
+
+  .contact-left-container h1 {
+    font-size: 3rem;
+  }
+
+  .contact-left-container p{
+    font-size: 1rem;
+  }
+
+  .form{
+    gap: 1.1rem;
+  }
+
+  .personal-details{
+    gap: 1.1rem;
+  }
+
+  .personal-details input{
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .message{
+    gap: 1.1rem;
+  }
+
+  .message select{
+    height: 2rem;
+  }
+
+  .contact-img{
+    padding: 0.7rem;
+    height: 3.3rem;
+  }
+
+  .connect-div div p{
+    font-size: 1rem;
+  }
+
+  .connect-div div h3{
+    font-size: 1.1rem;
+  }
+
+  .connect-with-me{
+    width: 21rem;
+  }
+
+  .message textarea{
+    height: 10rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:991px) {
+
+  .contact-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 0;
+  }
+
+  .contact-left-container{
+    max-width: 30rem;
+  }
+}
+
+@media (max-width:768px){
+
+  .contact-container{
+    grid-template-rows: 1.3fr 0.7fr;
+    gap: 3rem;
+  }
+
+.thankyou h1{
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width:576px) {
+
+  .contact-left{
+    padding: 0.8rem;
+  }
+
+  .contact-left-container h1{
+    font-size: 2rem;
+  }
+
+  .contact-left-container p{
+    font-size: 0.8rem;
+  }
+
+  .form{
+    gap: 0.8rem;
+  }
+
+  .personal-details{
+    gap: 0.8rem;
+  }
+
+  .personal-details input{
+    height: 1.5rem;
+    font-size:0.8rem ;
+    width: 8.8rem;
+  }
+
+  .message{
+    gap: 0.8rem;
+  }
+
+  .message select{
+    height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 0;
+    width: 19rem;
+  }
+
+  .message textarea{
+    height: 5rem;
+    font-size: 0.8rem;
+    width: 19rem;
+  }
+
+  .message button{
+    font-size: 0.8rem;
+    padding: 0.45rem 0rem;
+    width: 7rem;
+  }
+
+  .contact-img{
+    height: 2.3rem;
+  }
+
+  .contact-img a img{
+    width: 15px;
+    height: 15px;
+  }
+
+  .connect-div div p{
+    font-size: 0.8rem;
+  }
+
+  .connect-div div h3{
+    font-size: 0.9rem;
+  }
+
+  .thankyou a button{
+    font-size: 1rem;
+    width: 9rem;
+  }
+  
+}
