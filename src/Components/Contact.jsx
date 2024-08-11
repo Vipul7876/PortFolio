@@ -10,7 +10,7 @@ export default function Contact () {
   if ( state.succeeded ) {
     return <div className='thankyou'>
       <h1>Thankyou !</h1>
-      <Link to='/'>
+      <Link to='/' aria-label="Go to homepage">
         <button>Click Here !</button>
       </Link>
     </div>;
@@ -81,7 +81,7 @@ export default function Contact () {
           <div className='connect-with-me'>
             <div className='connect-div'>
               <div className='contact-img'>
-                <Link to='tel:+917876127982'>
+                <Link to='tel:+917876127982' aria-label="call">
                   <img src="./Icons/call.svg" alt="" />
                 </Link>
               </div>
@@ -92,7 +92,7 @@ export default function Contact () {
             </div>
             <div className='connect-div'>
               <div className='contact-img'>
-                <Link to='mailto:vipulsharma3001@gmail.com'>
+                <Link to='mailto:vipulsharma3001@gmail.com' aria-label="Mail to me">
                   <img src="./Icons/mail-2.svg" alt="" />
                 </Link>
               </div>
@@ -103,7 +103,7 @@ export default function Contact () {
             </div>
             <div className='connect-div'>
               <div className='contact-img'>
-                <Link to='https://maps.app.goo.gl/6jrGawGqYzCWStPf8' target='_blank'>
+                <Link to='https://maps.app.goo.gl/6jrGawGqYzCWStPf8' aria-label="Go to my Place" target='_blank'>
                   <img src="./Icons/location.svg" alt="" />
                 </Link>
               </div>

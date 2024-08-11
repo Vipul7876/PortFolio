@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
 }
 
 .skills-container {
@@ -12,7 +11,6 @@
   align-items: center;
   justify-content: center;
   gap: 1.3rem;
-  margin-top: 3.8rem;
 }
 
 .skills-container h1 {
@@ -30,7 +28,8 @@
 .skills-cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 4rem;
+  column-gap: 4rem;
+  row-gap: 3rem;
 }
 
 .skills-card {
@@ -71,29 +70,74 @@
   margin: 0.7rem 0rem;
 }
 
-#tailwind{
+#tailwind {
   padding: 1rem 0rem;
 }
 
+#firebase {
+  width: 4rem;
+}
+
+#postman {
+  width: 6rem;
+}
+
+#mongodb {
+  width: 6rem;
+}
+
+#express {
+  width: 6rem;
+}
+
 /* -----------Media Quieries------------ */
-@media (max-width: 1280px){
-  .skills{
-    margin-top: 2.5rem;
+@media (max-width: 1280px) {
+  .skills {
+    /* margin-top: 2.5rem; */
   }
 
-  .skills-card div img{
+  .skills-card{
+    gap: 1rem;
+  }
+
+  .skills-card div {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .skills-card div img {
     width: 3.7rem;
+    margin: 1rem 0rem;
   }
 
-  #javascript{
+  .skills-card div p{
+    font-size: 1.1rem;
+  }
+
+  #javascript {
     width: 4.5rem;
   }
 
-  #tailwind{
+  #tailwind {
     padding: 0.8rem 0rem;
   }
-}
 
+  #firebase {
+    width: 3.4rem;
+  }
+
+  #postman {
+    width: 5rem;
+  }
+
+  #mongodb {
+    width: 5rem;
+  }
+
+  #express {
+    width: 5rem;
+  }
+}
 
 @media (max-width: 1024px) {
   .skills-container h1 {
@@ -124,6 +168,9 @@
     column-gap: 5rem;
     row-gap: 3rem;
   }
+
+  
+
 }
 
 @media (max-width: 576px) {
@@ -136,8 +183,8 @@
   }
 
   .skills-cards {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 1.5rem;
   }
 
@@ -157,8 +204,28 @@
     margin: 0.8rem;
   }
 
+   .skills-card div p{
+    font-size: 0.8rem;
+  }
+
   #javascript {
     width: 3rem;
     margin: 0.7rem;
+  }
+
+  #firebase {
+    width: 2.3rem;
+  }
+
+  #postman {
+    width: 3rem;
+  }
+
+  #mongodb {
+    width: 4rem;
+  }
+
+  #express {
+    width: 3.5rem;
   }
 }

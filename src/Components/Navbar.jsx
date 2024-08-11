@@ -8,7 +8,7 @@ export default function Navbar () {
 
   return (
     <div className='navbar-container'>
-      <p><Link to='/'>V</Link></p>
+      <p><Link to='/' aria-label="Go to homepage">V</Link></p>
       <div
         className={showhamburger ? 'hamburger-menu':'navbar-menu'}
       >
@@ -26,7 +26,7 @@ export default function Navbar () {
             <NavLink to='/skills'>Skills</NavLink>
           </li>
         </ul>
-        <Link to='/contact'><button onClick={ () => setShowhamburger( false ) }>Hire me!</button></Link>
+        <Link to='/contact' aria-label="Go to contact"><button onClick={ () => setShowhamburger( false ) }>Hire me!</button></Link>
       </div>
       <button
         className='hambuger'
