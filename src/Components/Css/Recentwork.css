@@ -5,7 +5,7 @@
   font-family: "Mukta", sans-serif;
 }
 
-.recentwork-container{
+.recentwork-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,21 +34,28 @@
   gap: 5rem;
 }
 
-.left{
-  background-color: #1a122e;
-  padding: 2.5rem 0rem;
+.left {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  position: relative;
 }
 
-.left img {
+.left div {
+  padding: 2rem;
+  background-color: #1a122e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.left div img {
   width: 30rem;
 }
 
-.right{
+.right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,21 +63,21 @@
   padding: 1rem 1rem;
 }
 
-.right h3{
+.right h3 {
   margin: 1rem 0rem;
   color: #8750f7;
 }
 
-.right p span{
+.right p span {
   font-weight: 800;
 }
 
-.left:hover{
+.left div:hover {
   scale: 1.05;
   transition: 0.4s ease-in-out;
 }
 
-.left a div {
+.left div a div {
   position: absolute;
   width: 80%;
   background-color: #8750f7;
@@ -88,11 +95,92 @@
   transition: 0.7s ease-in-out;
 }
 
-.left a div span{
+.left div a div span {
   background-color: transparent;
 }
 
-.left:hover a div{
+.left div:hover a div {
   opacity: 1;
   bottom: 15%;
+}
+
+@media (max-width: 1280px) {
+  .works {
+    row-gap: 2.5rem;
+  }
+
+  .work1,
+  .work2,
+  .work3 {
+    gap: 4rem;
+  }
+
+  .left {
+    padding: 1rem 0rem;
+  }
+
+  .left div img {
+    width: 25rem;
+  }
+
+  .right {
+    max-width: 25rem;
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .recentwork-container h1 {
+    font-size: 3rem;
+  }
+
+  .work1,
+  .work2,
+  .work3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .work1,
+  .work2,
+  .work3 {
+    grid-template-rows: 0.6fr 1.3fr;
+  }
+
+  .recentwork-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .left {
+    padding: 0;
+  }
+
+  .left div img {
+    width: 17rem;
+  }
+
+  .right {
+    max-width: 18rem;
+  }
+
+  .right p {
+    font-size: 0.8rem;
+  }
+
+  .left div a div {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .left div img {
+    width: 15rem;
+  }
+
+  .right {
+    max-width: 18rem;
+  }
 }

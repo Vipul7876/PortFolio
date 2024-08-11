@@ -12,6 +12,7 @@
   animation-name: onload;
   animation-duration: 5.8s;
   animation-timing-function: ease-in-out;
+  pointer-events: none;
 }
 
 

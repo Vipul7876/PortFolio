@@ -15,12 +15,12 @@ export default function Home () {
           <h2>I am Vipul</h2>
           <h1><Typewriter
             options={ {
-              strings: [ 'Web Developer', 'Front-End Developer' ],
+              strings: [ 'Web Developer', 'Front-End Developer','React Developer','Full Stack Developer' ],
               autoStart: true,
               loop: true,
-              pauseFor: 1000,
-              delay: 300,
-              deleteSpeed:200
+              pauseFor: 500,
+              delay: 100,
+              deleteSpeed:150
             } }
           /></h1>
           <p>I make web pages come alive</p>

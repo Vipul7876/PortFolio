@@ -12,10 +12,12 @@ export default function Recentwork () {
         <div className='works'>
           <div className='work1'>
             <div className='left'>
-              <img src={Image1} alt="porject1" />
-              <Link to='https://shopp3000.netlify.app' target='_blank' aria-label="Go to shopping website">
-                <div>Visit Site <span>&#8599;</span></div>
-              </Link>
+              <div className='left-div'>
+                <img src={ Image1 } alt="porject1" />
+                <Link to='https://shopp3000.netlify.app' target='_blank' aria-label="Go to shopping website">
+                  <div>Visit Site <span>&#8599;</span></div>
+                </Link>
+              </div>
             </div>
             <div className='right'>
               <h3>Shopping</h3>
@@ -27,7 +29,9 @@ export default function Recentwork () {
           </div>
           <div className='work2'>
             <div className='left'>
-              <img src={ Image2 } alt="porject2" />
+              <div className='left-div'>
+                <img src={ Image2 } alt="porject2" />
+              </div>
             </div>
             <div className='right'>
               <h3>NetflixGpt</h3>
@@ -39,10 +43,12 @@ export default function Recentwork () {
           </div>
           <div className='work3'>
             <div className='left'>
-              <img src={ Image3 } alt="porject3" />
-              <Link to='https://blogg01.netlify.app/' target='_blank' aria-label="Go to bloging website">
-                <div>Visit Site <span>&#8599;</span></div>
-              </Link>
+              <div className='left-div'>
+                <img src={ Image3 } alt="porject3" />
+                <Link to='https://blogg01.netlify.app/' target='_blank' aria-label="Go to bloging website">
+                  <div>Visit Site <span>&#8599;</span></div>
+                </Link>
+              </div>
             </div>
             <div className='right'>
               <h3>Blogg</h3>
