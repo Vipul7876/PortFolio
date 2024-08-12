@@ -25,7 +25,7 @@ export default function Home () {
           /></h1>
           <p>I make web pages come alive</p>
           <div className='home-left-btns'>
-            <NavLink to='https://drive.google.com/file/d/1xIMSERVovUyKRUj9Eq5ecv9q813rpHMj/view?usp=drive_link' target='_blank'><button >Download CV <img src="./Icons/download.svg" alt="" /></button></NavLink>
+            <NavLink to='https://drive.google.com/file/d/1YTvVSWKdzX0j5nFDcQ3GZiulj0dU7xF2/view?usp=sharing' target='_blank'><button >Download CV <img src="./Icons/download.svg" alt="" /></button></NavLink>
             <ul>
               <li><Link to='https://www.linkedin.com/in/vipul-sharma-1a228323a' target='_blank' aria-label="Go to linkedin"><img src="./Icons/linkedin.svg" alt="" /></Link></li>
               <li><Link to='https://github.com/Vipul7876' target='_blank' aria-label="Go to Github"><img src="./Icons/github.svg" alt="" /></Link></li>
