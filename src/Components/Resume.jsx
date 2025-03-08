@@ -10,10 +10,16 @@ export default function Resume () {
           </h1>
           <ul>
             <li>
+              <p>2024-Present</p>
+              <h2>TechGlock Softwawre Solutions</h2>
+              <p>Full Time</p>
+              <p>Ajitgarh, Punjab</p>
+            </li>
+            <li>
               <p>2023-2024</p>
               <h2>Infovirtech Pvt. Ltd</h2>
               <p>3-months Internship</p>
-              <p>Mughalsarai, Uttar Pradesh</p>              
+              <p>Mughalsarai, Uttar Pradesh</p>
             </li>
             <li>
               <p>2023-2023</p>
@@ -25,7 +31,7 @@ export default function Resume () {
               <p>2021</p>
               <h2>Neilit</h2>
               <p>2-months Internship</p>
-              <p>Haridwar, Uttarakhand</p>              
+              <p>Haridwar, Uttarakhand</p>
             </li>
           </ul>
         </div>

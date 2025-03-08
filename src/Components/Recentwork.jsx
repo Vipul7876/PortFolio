@@ -10,6 +10,20 @@ export default function Recentwork () {
       <div className="recentwork-container">
         <h1>My Recent Works</h1>
         <div className='works'>
+          <div className='work0'>
+            <div className='left'>
+              <div className='left-div liveprojects'>
+                <h1>3+
+                </h1><span>Live Projetcs</span>
+              </div>
+            </div>
+            <div className='right personalprojectswrapper'>
+              <div className='personalprojects'>
+                <h1>3
+                </h1><span>Personal Projetcs</span>
+              </div>
+            </div>
+          </div>
           <div className='work1'>
             <div className='left'>
               <div className='left-div'>
