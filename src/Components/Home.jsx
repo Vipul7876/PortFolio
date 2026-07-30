@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 export default function Home () {
+  const driveLink = import.meta.env.VITE_DRIVE_LINK ?? '';
 
   return (
     <div className='home-container'>
@@ -15,17 +16,17 @@ export default function Home () {
           <h2>I am Vipul</h2>
           <h1><Typewriter
             options={ {
-              strings: [ 'Web Developer', 'Front-End Developer','React Developer','Full Stack Developer' ],
+              strings: [ 'Web Developer', 'Front-End Developer', 'React Developer', 'Full Stack Developer' ],
               autoStart: true,
               loop: true,
               pauseFor: 500,
               delay: 100,
-              deleteSpeed:150
+              deleteSpeed: 150
             } }
           /></h1>
           <p>I make web pages come alive</p>
           <div className='home-left-btns'>
-            <NavLink to='https://drive.google.com/file/d/1YTvVSWKdzX0j5nFDcQ3GZiulj0dU7xF2/view?usp=sharing' target='_blank'><button >Download CV <img src="./Icons/download.svg" alt="" /></button></NavLink>
+            <NavLink to={ driveLink } target='_blank'><button >Download CV <img src="./Icons/download.svg" alt="" /></button></NavLink>
             <ul>
               <li><Link to='https://www.linkedin.com/in/vipul-sharma-1a228323a' target='_blank' aria-label="Go to linkedin"><img src="./Icons/linkedin.svg" alt="" /></Link></li>
               <li><Link to='https://github.com/Vipul7876' target='_blank' aria-label="Go to Github"><img src="./Icons/github.svg" alt="" /></Link></li>
